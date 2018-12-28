@@ -6,7 +6,9 @@ services:
             context: .
             dockerfile: Dockerfile
         ports:
-          - "8080:8080"
+          - "29000:29000"
           - "50000:50000"
+        environments:
+          - CLIENTPORT=29000
         volumes:
           - "./jenkins_home:/var/jenkins_home"
