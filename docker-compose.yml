@@ -8,7 +8,7 @@ services:
         ports:
           - "29000:29000"
           - "50000:50000"
-        environments:
+        environment:
           - CLIENTPORT=29000
         volumes:
           - "./jenkins_home:/var/jenkins_home"
