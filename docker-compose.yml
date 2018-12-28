@@ -1,0 +1,11 @@
+jenkins:
+    image: jenkins:2.60.3
+    build:
+        context: ..
+        dockerfile: Dockerfile
+    ports:
+      - "8090:8090"
+    network_mode: "host"
+    volumns:
+      - "/home1/jenkins/jenkins_home:/var/jenkins_home
+		
