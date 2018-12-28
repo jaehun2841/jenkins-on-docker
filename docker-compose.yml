@@ -5,7 +5,5 @@ jenkins:
         dockerfile: Dockerfile
     ports:
       - "8090:8090"
-    network_mode: "host"
-    volumns:
-      - "/home1/jenkins/jenkins_home:/var/jenkins_home"
-		
+    volumes:
+      - "./jenkins_home:/var/jenkins_home"
